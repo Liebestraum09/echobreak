@@ -21,8 +21,7 @@ The simulation models a user interacting with a news recommendation system over 
 
 At each step, the user clicks one article based on a softmax probability distribution over similarity scores. The softmax temperature (0.5) controls how sharply the user favors high-similarity articles — lower values produce near-deterministic behavior, while higher values allow more exploratory clicks. After each click, the user's interest profile shifts slightly toward the clicked article's category.
 
-The key design choice is that we track the **exposure log** (what the system showed) rather than the profile trajectory (how the user's interests changed). This sidesteps the limitations of the simplified click model and directly measures what matters: the information diet the system created.
-
+The key design choice is that we track the **exposure log** (what the system showed) rather than the profile trajectory (how the user's interests changed). This sidesteps the limitations of the simplified click model and directly measures what matters which is the information pool the system created.
 ## Results
 
 | Metric | Echo Chamber | EchoBreak |
