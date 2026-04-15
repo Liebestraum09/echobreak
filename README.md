@@ -10,6 +10,8 @@ This is not only an ethical concern. A user locked into a single-category feed l
 
 This project was motivated by a straightforward question: what happens if, instead of trying to change user behavior, we change what the system shows?
 
+The initial inspiration came from a datathon project where I worked on user segmentation for debit card usage. Observing how user behavior patterns cluster and reinforce themselves led me to think about how recommendation systems create similar feedback loops at scale.
+
 ## Approach
 
 The simulation models a user interacting with a news recommendation system over 300 steps. Two recommendation strategies run in parallel with **identical user behavior** — the same click model, the same parameters, the same initial profile:
